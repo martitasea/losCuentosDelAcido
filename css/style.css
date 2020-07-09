@@ -1,0 +1,58 @@
+img {
+  width: 75px;
+  padding: 10px;
+}
+
+.buenos {
+  display: inline-block;
+  animation-name: movimiento;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translate(100px);
+  }
+  50% {
+    transform: translate(200px);
+  }
+  100% {
+    transform: translate(300px);
+  }
+}
+
+.inanimados {
+  display: inline-block;
+  animation-name: giro;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes giro {
+  0% {
+    transform: rotate(-45deg);
+  }
+  33% {
+    transform: rotate(45deg);
+  }
+  66% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+.malos {
+  display: inline-block;
+}
+#bruja:hover {
+  transform: skewX(20deg) skewY(10deg);
+}
+#dragon:hover {
+  transform: scale(1.5);
+}
+#nomo:hover {
+  transform: rotate(180deg);
+}
